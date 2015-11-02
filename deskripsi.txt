@@ -1,0 +1,48 @@
+Dear Mas Agus,
+Melanjutkan pembicaraan via telpon barusan, bersama ini saya sampaikan scope development untuk aplikasi mobile yang akan kita buat (batiket.com) - seperti aplikasi mobile traveloka.com atau tiket.com. Intinya untuk aplikasinya (running under android, ios dan windows phone) meliputi halaman2 seperti yang ada di aplikasi sejenis, yaitu :
+1. Halaman Home/ Beranda, ada login buat admin area (pemilik bisnis)
+2. Halaman Tentang Kami
+3. Halaman Pencarian Tiket
+4. Halaman Pemesanan Tiket
+5. Halaman Pembayaran
+6. Halaman Konfirmasi
+
+A. Adapun spesifikasi umum dari aplikasi mobile batiket adalah sbb :
+
+a.         Tampilan public area for mobile yang meliputi halaman untuk :
+
+Ø  Home, yang didalamnya terdapat slideshow ( jika memungkinkan ) , menu, register member, login as member dan informasi lainnya
+
+Ø  Pencarian tiket pesawat,
+
+Ø  Hasil pencarian tiket pesawat,
+
+Ø  Pemesanan,
+
+Ø  Metode pembayaran
+
+Ø  Konfirmasi Pemesanan
+
+b.        Konfirmasi Pembayaran, digunakan untuk konfirmasi bahwa pembayaran sudah dilakukan dan proses melakukan retrieve tiket yang sudah di booking.
+
+c.         Member Area
+
+Ø  Melakukan preview tiket ulang ( tampil di layar )
+
+Ø  Rincian Transaksi (5 transaksi terakhir )
+
+d.    Admin Area
+
+Ø  Panel untuk melakukan perubahan pada menu Home
+
+B.      Batasan Spesifikasi Teknis Aplikasi Mobile BATIKET ini adalah sebagai berikut :
+
+a)      Semua fitur dan design ( warna dominasi biru, penataan ) adalah fix
+
+b)        Aplikasi Mobile ini dapat dilakukan perubahan ( dinamis ) pada logo, nama aplikasi, dan informasi aplikasi
+
+c)        Semua inventory yang berhubungan dengan produk maskapai atau tiket pesawat diambil dari API milik saya
+
+Mohon dibuatkan UI draft untuk halaman2 tersebut dulu dalam 1-2 hari ini, bisa ya mas?
+Mohon konfirmasi nya.
+Terimakasih.

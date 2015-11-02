@@ -1,0 +1,55 @@
+
+
+*{
+	@include center();
+	font-family: "sertig";
+}
+html,body{
+	height:100%;
+	background: #2C82C9;
+
+}.form{
+	margin-top: 15%;
+}
+.wrapper{
+display: table;
+	@include center();
+}	
+
+.form input{
+	display: table;
+@include center();
+min-width: 180px;
+padding: 10px;
+border: none;
+@include borderRad(3px);
+font-size: 13px;
+}
+.form div{
+		display: table;
+@include center();
+margin: 3px auto;
+color: white;
+}
+.title{
+	font-size: 20px;
+	font-weight: bold;
+}
+.btn{
+	height: 30px;
+	min-width: 200px;
+	background: #2C82C9;
+	font-weight: bold;
+	color: white;
+	font-size: 13px;
+	border:1px solid white;
+	@include borderRad(3px);
+}
+.btn:active{
+	background:white;
+	color: #2C82C9;
+}
+#navigator{
+	margin: 5px;
+	min-width: 50px;
+}

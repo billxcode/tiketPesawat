@@ -1,0 +1,9 @@
+$(function(){
+	$("#slide-menu").hide();
+	$("#tab-menu").on("click",function(){
+		$("#slide-menu").show();
+	});
+	$("#hide-slide-menu").on("click",function(){
+		$("#slide-menu").hide();
+	});
+});

@@ -1,0 +1,36 @@
+$(function(){
+	$("#formLogin").show();
+	$("#formRegister").hide();
+	$("#btnShowRegister").on("click",function(){
+			$("#formLogin").hide();
+	$("#formRegister").show();
+	});
+	$("#btnShowLogin").on("click",function(){
+	$("#formLogin").show();
+	$("#formRegister").hide();
+	});
+	$("#btnCreateAccount").on("click",function(){
+		$.post("server/register.php",$("#formRegister").serialize(),function(data,success){
+			alert(data);
+		});
+	});
+	$("#btnLogin").on("click",function(){
+		$.post("server/login.php",$("#formLogin").serialize(),function(data,success){
+			alert(data);
+			window.location="dashboard";
+		});
+	});
+	$("#slide-menu").hide();
+	$("#tab-menu").on("click",function(){
+		$("#slide-menu").show();
+	});
+	$("#hide-slide-menu").on("click",function(){
+		$("#slide-menu").hide();
+	});
+	$("#logReg").on("click",function(){
+		window.location = "RegLog.html";
+	});
+	$("#navigator").on("click",function(){
+		window.location = "index.html";
+	});
+});

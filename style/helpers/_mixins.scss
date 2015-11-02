@@ -1,0 +1,18 @@
+@mixin borderRad($param){
+	border-radius: $param;
+	-webkit-border-radius: $param;
+	-moz-border-radius: $param;
+	-ms-border-radius: $param;
+	-o-border-radius: $param;
+}
+@mixin center(){
+	margin: 0px auto;
+	padding: 0px;
+}
+@mixin linkDecoration(){
+	a{text-decoration: none;}
+	a:link{text-decoration: none;}
+	a:visited{text-decoration: none;}
+	a:hover{text-decoration: none;}
+	a:active{text-decoration: none;}
+}
