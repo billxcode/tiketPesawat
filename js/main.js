@@ -20,12 +20,27 @@ $(function(){
 			window.location="dashboard";
 		});
 	});
-	$("#slide-menu").hide();
+	$("#menu-left").hide();
+	var $param1=true;
 	$("#tab-menu").on("click",function(){
-		$("#slide-menu").show();
+		if($param1){
+		$("#menu-left").show();
+		$param1=false;
+		}else{
+		$("#menu-left").hide();
+		$param1=true;
+		}
 	});
-	$("#hide-slide-menu").on("click",function(){
-		$("#slide-menu").hide();
+	$("#menu-right").hide();
+	var $param2=true;
+	$("#options").on("click",function(){
+		if($param2){
+		$("#menu-right").show();
+		$param2=false;
+		}else{
+		$("#menu-right").hide();
+		$param2=true;
+		}
 	});
 	$("#logReg").on("click",function(){
 		window.location = "RegLog.html";

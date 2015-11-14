@@ -1,6 +1,9 @@
 @font-face {
   font-family: "sertig";
   src: url("Sertig.otf"); }
+@font-face {
+  font-family: "font-awesome";
+  src: url("http://localhost/font-awesome/fonts/FontAwesome.otf"); }
 * {
   margin: 0px auto;
   padding: 0px;

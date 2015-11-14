@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAsD;EAA3C,WAAW,EAAC,QAAQ;EAAC,GAAG,EAAC,iBAAiB",
+"sources": ["../style/base/_variables.scss"],
+"names": [],
+"file": "admin.css"
+}

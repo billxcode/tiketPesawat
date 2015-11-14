@@ -32,7 +32,7 @@ class database{
 		return htmlentities(htmlspecialchars(stripslashes($param)));
 	}
 	public function insert_data($judul,$maskapai,$harga){
-		return $this->check_boolean(mysqli_query($this->connect,"INSERT INTO ");
+		return $this->check_boolean(mysqli_query($this->connect,"INSERT INTO "));
 	}
 	function __destruct(){
 		mysqli_close($this->connect);

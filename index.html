@@ -8,27 +8,65 @@
 <!-- <script type="text/javascript" src="js/main.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
  -->
+ <link rel="stylesheet" type="text/css" href="http://localhost/font-awesome/css/font-awesome.min.css">
  <script type="text/javascript" src="js/main.js"></script>
  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 </head>
 <body>
 <div class="wrapper">
 	<div class="header">
-		<div id="tab-menu">[ = ]</div>
-		<div class="title">Home</div>
+		<div id="tab-menu"><span class="fa fa-user fa-2x"></span></div>
+		<div class="title"><img src="img/logo.png"></div>
+		<div id="options"><span class="fa fa-cog fa-2x"></span></div>
 	</div>
 	<div class="body">
+		<div class="slide-show"><img src="img/wallpaper.png"></div></div>
+		<div class="main-menu">
+			<div class="main-menu-list"><span class="fa-car fa-3x"></span></div>
+			<div class="main-menu-list"><span class="fa-calendar fa-3x"></span></div>
+		</div>
+		<div class="sub-main-menu">
+			<div><span class="fa-bell fa-2x"></span><span class="fa-info-circle fa-2x"></span><span class="fa-phone fa-2x"></span><span class="fa-share-alt fa-2x"></span></div>
+		</div>
+		<div id="value-sub-main-menu">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-	</div>
+		</div>
 	<div class="footer">
 		
 	</div>
-	<div id="slide-menu">
-		<div id="hide-slide-menu">=</div>
-		<div class="list-menu" id="home">Home</div>
+	<div class="slide-menu" id="menu-left">
+		<div id="profile">
+			<span class="fa fa-user fa-3x"></span>
+			<br>
+			<span>Traveler</span>
+		</div>
+		<div class="menu-list"><span class="fa-search"></span>Find Ticket</div>
+		<div class="menu-list"><span class="fa-calendar-plus-o"></span>Manage Order</div>
+		<div class="menu-list"><span class="fa-star"></span>Virtual Card</div>
+		<div class="menu-list"><span class="fa-pencil"></span>Update Profile</div>
+		<div class="menu-list"><span class="fa-unlock-alt"></span>Sign Out</div>
+		<!-- <div class="list-menu" id="home">Home</div>
 		<div class="list-menu" id="searchTiket">Search Ticket</div>
 		<div class="list-menu" id="about">About</div>
-		<div class="list-menu" id="logReg">Login/Register</div>
+		<div class="list-menu" id="logReg">Login/Register</div> -->
+	</div>
+	<div class="slide-menu" id="menu-right">
+		<div class="menu-list">Language
+		<select name="language" class="selectOptions">
+			<option value="id">INDONESIA</option>
+			<option value="eng">ENGLISH</option>
+		</select>
+		</div>
+		<div class="menu-list">Currency
+		<select name="curency" class="selectOptions">
+			<option value="id">IDR - Indonesia Rupiah</option>
+		</select></div>
 	</div>
 </div>
 </body>

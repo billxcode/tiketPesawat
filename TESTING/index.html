@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="http://localhost/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(function(){
+		$("#test").on("click",function(){
+$.post("http://torsapi.app.piposystem.com/api/airlines/Login",{"product_code": "VF","auth_id": "ff8f8a59671ea3ce1a801ff2a9196c1a"},function(data,success){
+				alert(data);
+		});
+		});
+			
+	});
+
+
+</script>
+<button id="test">TEST LOGIN</button>
+
+</body>
+</html>
