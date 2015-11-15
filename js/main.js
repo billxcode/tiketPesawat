@@ -31,6 +31,9 @@ $(function(){
 		$param1=true;
 		}
 	});
+	$("#login-or-regis").on("click",function(){
+		window.location="RegLog.html";
+	});
 	$("#menu-right").hide();
 	var $param2=true;
 	$("#options").on("click",function(){
@@ -47,5 +50,15 @@ $(function(){
 	});
 	$("#navigator").on("click",function(){
 		window.location = "index.html";
+	});
+	$("#logout").on("click",function(){
+		window.location="../home.html";
+	});
+	$("#search-tiket").on("click",function(){
+		$("#pop-search-tiket").show();
+	});
+	$(".popupmenu").hide();
+	$(".btn-close").on("click",function(){
+		$(".popupmenu").hide();
 	});
 });
