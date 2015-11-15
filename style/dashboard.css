@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "sertig";
+  src: url("Sertig.otf"); }
+@font-face {
+  font-family: "font-awesome";
+  src: url("http://localhost/font-awesome/fonts/FontAwesome.otf"); }
+.wrapper {
+  display: table;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px; }
+
+.header {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid  #2C82C9;
+  color: #2C82C9; }
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: sertig, font-awesome; }
+
+#tab-menu {
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+  padding: 5px; }
+
+#options {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: bold;
+  padding: 5px; }
+
+.slide-menu {
+  position: absolute;
+  top: 58px;
+  z-index: 1;
+  background: white;
+  width: 70%;
+  height: 100%;
+  color: #2C82C9; }
+
+#menu-right {
+  border-left: 1px solid  #DCDCDC;
+  right: 0px; }
+
+#menu-left {
+  border-right: 1px solid  #DCDCDC; }
+
+#hide-slide-menu {
+  width: 90%;
+  background: #2969B0;
+  font-weight: bold;
+  width: auto; }
+
+.menu-list {
+  padding: 10px;
+  padding-left: 10%;
+  border-bottom: 1px solid  #DCDCDC; }
+
+.header a {
+  float: left; }
+
+#profile {
+  width: 100%;
+  height: 20%;
+  background: #2C82C9;
+  color: white;
+  text-align: center; }
+
+#profile i {
+  margin: 10px; }
+
+span {
+  margin: 0px 10px; }
+
+.sub-main-menu {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid  #DCDCDC;
+  border-top: 1px solid  #DCDCDC;
+  color: #B4B4B4;
+  margin-top: 10px; }
+
+.sub-main-menu div {
+  display: table;
+  margin: 10px auto; }
+
+.sub-main-menu div span {
+  padding: 0px 5px 0px 5px; }
+
+.title {
+  display: table;
+  margin: 0px auto;
+  padding: 0px;
+  padding: 5px; }
+
+.title img {
+  width: auto;
+  height: 40px; }
+
+.slide-show img {
+  width: 100%;
+  border-bottom: 15px solid #2C82C9; }
+
+.body {
+  height: auto; }
+
+.main-menu {
+  display: table;
+  margin: 0px auto; }
+
+.main-menu-list {
+  border-radius: 50%;
+  background: #2C82C9;
+  float: left;
+  width: 70px;
+  height: 70px;
+  padding: 20px 15px 10px 15px;
+  text-align: center;
+  color: white;
+  margin: 10px; }
+
+.selectOptions {
+  border: 1px solid #DCDCDC;
+  border-radius: 3px;
+  height: 30px;
+  width: 100px; }
+
+#value-sub-main-menu {
+  font-size: 11px;
+  text-align: justify;
+  margin: 10px; }
+
+.popupmenu {
+  color: #2C82C9;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1; }
+
+.options-bar {
+  width: 200px;
+  height: 50px; }
+
+a {
+  text-decoration: none; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+/*# sourceMappingURL=dashboard.css.map */

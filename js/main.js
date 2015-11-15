@@ -49,7 +49,7 @@ $(function(){
 		window.location = "RegLog.html";
 	});
 	$("#navigator").on("click",function(){
-		window.location = "index.html";
+		window.location = "home.html";
 	});
 	$("#logout").on("click",function(){
 		window.location="../home.html";

@@ -11,6 +11,7 @@
  <link rel="stylesheet" type="text/css" href="http://localhost/font-awesome/css/font-awesome.min.css">
  <script type="text/javascript" src="../js/main.js"></script>
  <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+
 </head>
 <body>
 <div class="wrapper">
@@ -69,14 +70,40 @@
 		</select></div>
 	</div>
 	<div class="popupmenu" id="pop-search-tiket">
-		<div class="btn-close"><span class="fa-arrow-left fa-2x"></span>
-		<div>
-			<select name="departur" id="departur">
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
-			</select>
+		<div class="btn-close"><span class="fa-arrow-left fa-2x"></span></div>
+		<div class="form-find-tiket">
+		<div class="options-bar">
+					<select name="departur" id="departur">
+						<option value="jakarta">Jakarta</option>
+						<option value="bali">Bali</option>
+						<option value="surabaya">Surabaya</option>
+					</select>
+				</div>
+				<div class="options-bar">
+					<select name="return" id="return">
+						<option value="jakarta">Jakarta</option>
+						<option value="bali">Bali</option>
+						<option value="surabaya">Surabaya</option>
+					</select>
+				</div>
+				<div class="input-data-form">
+					<input type="date" placeholder="Go">
+				</div>
+				<div class="options-bar">Single Or Double Ticket
+					<select name="ticket-options">
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</div>
+				<div class="input-data-form">
+					<input type="date" placeholder="Back">
+				</div>
+				<div class="input-data-form">
+					<button class="btn btn-find">Find</button>
+				</div>
 		</div>
+		<div>
+			
 		</div>
 	</div>
 	<div class="popupmenu" id="pop-manage-order">

@@ -145,6 +145,30 @@ span {
   background: white;
   z-index: 1; }
 
+.options-bar select, .input-data-form input, .btn-find {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #D0D1D5;
+  margin: 5px;
+  background: white;
+  font-size: 15px;
+  text-align: center; }
+
+.options-bar {
+  text-align: center; }
+
+.form-find-tiket {
+  display: table;
+  margin: 10px auto;
+  width: 80%;
+  height: auto; }
+
+.btn-find {
+  border-bottom: 3px solid #41A85F;
+  background-color: #61BD6D;
+  height: 50px;
+  border-radius: 3px; }
+
 a {
   text-decoration: none; }
 
