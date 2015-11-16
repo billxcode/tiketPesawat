@@ -7,7 +7,7 @@
 * {
   margin: 0px auto;
   padding: 0px;
-  font-family: "sertig"; }
+  font-family: sertig, font-awesome; }
 
 html, body {
   height: 100%;
@@ -66,6 +66,7 @@ html, body {
 
 #navigator {
   margin: 5px;
-  min-width: 50px; }
+  min-width: 50px;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

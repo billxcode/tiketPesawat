@@ -61,4 +61,10 @@ $(function(){
 	$(".btn-close").on("click",function(){
 		$(".popupmenu").hide();
 	});
+	$("#btn-Find-Ticket").on("click",function(){
+		var $form_find_ticket = $("#form-find-ticket").serialize();
+		$.post("../server/searchTicket.php",$form_find_ticket,function(data,success){
+			alert(data);
+		});
+	});
 });

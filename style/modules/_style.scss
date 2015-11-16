@@ -2,7 +2,7 @@
 
 *{
 	@include center();
-	font-family: "sertig";
+	font-family: sertig, font-awesome;
 }
 html,body{
 	height:100%;
@@ -52,4 +52,5 @@ color: white;
 #navigator{
 	margin: 5px;
 	min-width: 50px;
+	color: white;
 }
