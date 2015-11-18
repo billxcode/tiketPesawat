@@ -7,16 +7,17 @@
 <script type="text/javascript" src="http://localhost/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
+ <link rel="stylesheet" href="http://localhost/tiketPesawat/css/jquery-ui.css">
+<script type="text/javascript" src="http://localhost/tiketPesawat/js/jquery-ui.js"></script>
 </head>
 <body>
 <button type="button" class="btn" id="navigator"><span class="fa-home"></span></button>
 <div class="wrapper">
 	<div class="form">
 	<form id="formLogin"><div class="title">Login</div>
-		<div><input type="text" name="username" placeholder="Username"></div>
+				<div><input type="text" name="username" placeholder="Username" id="username"></div>
 				<div><input type="password" name="password" placeholder="Password"></div>
-				<div><button type="button" class="btn" id="btnLogin">Login</button> </div>
+				<div><button type="button" class="btn" id="btnLogin">Login</button></div>
 				<div> - OR - </div>
 				<div><button type="button" class="btn" id="btnShowRegister">Create Account</button></div>
 				</form>
@@ -32,6 +33,7 @@
 		<div> - OR - </div>
 		<div><button type="button" class="btn" id="btnShowLogin">Login</button></div></form>
 	</div>
+	
 </div>
 </body>
 </html>

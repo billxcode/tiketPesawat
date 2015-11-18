@@ -127,6 +127,10 @@ span {
 .selectOptions {
   border: 1px solid #DCDCDC;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   height: 30px;
   width: 100px; }
 
@@ -163,11 +167,77 @@ span {
   width: 80%;
   height: auto; }
 
-.btn-find {
+.btn {
+  border: none;
   border-bottom: 3px solid #41A85F;
   background-color: #61BD6D;
   height: 50px;
-  border-radius: 3px; }
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px; }
+
+#form-update-profile {
+  display: table;
+  margin: 0px auto;
+  width: 80%; }
+
+#form-update-profile input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #D0D1D5;
+  background: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px 0px 5px 0px; }
+
+#form-update-profile div, #form-update-profile button {
+  display: table;
+  margin: 0px auto;
+  width: 100%; }
+
+#result, #result-order, #pop-profile {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0px;
+  left: 0px;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+#result span {
+  color: #2C82C9; }
+
+#result div {
+  margin: 10px; }
+
+#scope-list-ticket form, #scope-list-order form {
+  border: 1px solid #D0D1D5;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 5px; }
+
+#scope-list-ticket button, #scope-list-order button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #FBA026;
+  background: #F37934;
+  color: white;
+  font-weight: bold; }
+
+#result-order {
+  z-index: 1; }
+
+#pop-profile {
+  z-index: 1; }
 
 a {
   text-decoration: none; }

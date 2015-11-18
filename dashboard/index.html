@@ -11,7 +11,8 @@
 <link rel="stylesheet" type="text/css" href="http://localhost/font-awesome/css/font-awesome.min.css">
 <script type="text/javascript" src="../js/main.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-
+  <link rel="stylesheet" href="http://localhost/tiketPesawat/css/jquery-ui.css">
+<script type="text/javascript" src="http://localhost/tiketPesawat/js/jquery-ui.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -48,9 +49,9 @@
 					<span>Traveler</span>
 				</div>
 				<div class="menu-list" id="search-tiket"><span class="fa-search"></span>Find Ticket</div>
-				<div class="menu-list"><span class="fa-calendar-plus-o"></span>Manage Order</div>
+				<div class="menu-list" id="manage-order"><span class="fa-calendar-plus-o"></span>Manage Order</div>
 				<div class="menu-list"><span class="fa-star"></span>Virtual Card</div>
-				<div class="menu-list"><span class="fa-pencil"></span>Update Profile</div>
+				<div class="menu-list" id="update-profile"><span class="fa-pencil"></span>Update Profile</div>
 				<div class="menu-list" id="logout"><span class="fa-unlock-alt"></span>Sign Out</div>
 	<!-- <div class="list-menu" id="home">Home</div>
 	<div class="list-menu" id="searchTiket">Search Ticket</div>
@@ -88,7 +89,7 @@
 				</select>
 			</div>
 			<div class="input-data-form">
-			<input type="date" placeholder="Go" name="date-go">
+			<input type="text" class="date-picker" placeholder="Go" name="date-go">
 			</div>
 			<div class="options-bar">Single Or Double Ticket
 				<select name="ticket-options">
@@ -97,7 +98,7 @@
 				</select>
 			</div>
 			<div class="input-data-form">
-				<input type="date" placeholder="Back" name="date-back">
+				<input type="text" class="date-picker" placeholder="Back" name="date-back">
 			</div>
 			<div class="input-data-form">
 				<button class="btn btn-find" type="button" id="btn-Find-Ticket" name="btnsearch">Find</button>
@@ -108,14 +109,42 @@
 
 		</div>
 	</div>
-	<div class="popupmenu" id="pop-manage-order">
-		<div class="btn-close"><span class="fa-arrow-left fa-2x"></span></div>
-	</div>
 	<div class="popupmenu" id="pop-virtual-card">
 		<div class="btn-close"><span class="fa-arrow-left fa-2x"></span></div>
 	</div>
-	<div class="popupmenu" id="pop-update-profile">
+	<div class="popupmenu" id="result">
 		<div class="btn-close"><span class="fa-arrow-left fa-2x"></span></div>
+		<div id="scope-list-ticket">
+			<!-- order type here... -->
+		</div>
+	</div>
+	<div class="popupmenu" id="result-order">
+		
+	</div>
+	<div class="popupmenu" id="pop-manage-order">
+		<div class="btn-close"><span class="fa-arrow-left fa-2x"></span></div>
+		<div id="scope-list-order">
+			<!-- order type here... -->
+		</div>
+	</div>
+	<div class="popupmenu" id="pop-profile">
+	<div class="btn-close"><span class="fa-arrow-left fa-2x"></span></div>
+		<form class="form" id="form-update-profile" name="form-update-profile">
+		<div id="scope-profile">
+				<div>
+					<span id="username"></span>
+				</div><div>
+					<span id="email"></span>
+				</div><div>
+					<input type="password" name="password" class="text" id="password">
+				</div><div>
+					<input type="text" name="complete-name" class="text" placeholder="Complete Name">
+				</div>
+				<div>
+					<button type="button" name="btn-update-profile" id="btn-update-profile" class="btn btn-update">Update</button>
+				</div>
+				</div>
+				</form>
 	</div>
 </div>
 </body>
