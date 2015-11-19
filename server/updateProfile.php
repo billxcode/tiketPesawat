@@ -3,8 +3,9 @@
 include "crud.php";
 
 $control = new database();
-$completename = $control->security($_POST['complete-name']);
+$username = $control->security($_POST['username']);
 $password = $control->security($_POST['password']);
-$control->update_profile($completename,$password);
+$completename = $control->security($_POST['completename']);
+echo $control->update_profile($username,$password,$completename);
 
 ?>

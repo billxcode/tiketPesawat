@@ -48,7 +48,7 @@ class database{
 	}
 	public function view_profile($username){
 		$obj = array();
-		$sql = mysqli_query($this->connect,"SELECT username,email,password FROM profile WHERE username='$username'") or die(mysqli_error());
+		$sql = mysqli_query($this->connect,"SELECT username,email,password,complete_name FROM profile WHERE username='$username'") or die(mysqli_error());
 		if(mysqli_num_rows($sql)>0){
 			while ($rows=mysqli_fetch_array($sql)) {
 				$obj[]=$rows;
@@ -59,8 +59,8 @@ class database{
 		}
 
 	}
-	public function update_profile($username, $password){
-		
+	public function update_profile($username, $password,$completename){
+		return $this->check_boolean(mysqli_query($this->connect,"UPDATE `profile` SET `complete_name`='$completename',`password`='$password' WHERE `username`='$username'") or die(mysqli_error()));
 	}
 	public function manage_order($username){
 		$sql = mysqli_query($this->connect,"SELECT id_ticket,id_profile,id_order_ticket, username, price_ticket, maskapai, date_ticket FROM order_ticket,profile,ticket WHERE profile.id_profile=order_ticket.profile_id_profile and ticket.id_ticket=order_ticket.ticket_id_ticket and profile.username='$username'") or die(mysqli_error());

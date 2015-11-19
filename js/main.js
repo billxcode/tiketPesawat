@@ -131,20 +131,25 @@ $(function(){
 		$("#pop-manage-order").show();
 	});
 	$("#update-profile").on("click",function(){
-		alert("test");
 		var $username = document.cookie;
 		$.post("http://localhost/tiketPesawat/server/viewProfile.php",{"username":$username},function(data,success){
 			var obj = JSON.parse('{"view_profile" :'+data+'}');
-			$("#username").html(obj.view_profile[0].username);
-			$("#email").html(obj.view_profile[0].email);
+			$("#username").val(obj.view_profile[0].username);
+			$("#email").val(obj.view_profile[0].email);
 			$("#password").val(obj.view_profile[0].password);
+			$("#completename").val(obj.view_profile[0].complete_name);
 		});
 		$("#username").html(document.cookie);
 		$("#pop-profile").show();
 	});
 	$("#btn-update-profile").on("click",function(){
-		$.post("",$("#").serialize(),function(){
-
+		var $username,$password,$email,$completename;
+		$username = $("#username").val();
+		$password = $("#password").val();
+		$email = $("#email").val();
+		$completename = $("#completename").val();		
+		$.post("http://localhost/tiketPesawat/server/updateProfile.php",{"username":$username,"password":$password,"email":$email,"completename":$completename},function(data,success){
+			alert(data);
 		});
 	});
 });
